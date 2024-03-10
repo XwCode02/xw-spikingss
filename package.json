@@ -1,6 +1,6 @@
 {
   "name": "xw-spikingss",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "A lightweight web crawler.",
   "main": "app/main.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "electron-packager": "^14.1.0"
   },
   "dependencies": {
-	"sitemap-xwjs": "^1.3.2",
+	"sitemap-xwjs": "^1.3.3",
 	"lswney-etl": "^0.3.0",
 	"bicycle-moose": "^1.0.1",
 	"printer-moose": "^1.0.0",
