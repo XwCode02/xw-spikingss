@@ -1,0 +1,35 @@
+{
+  "name": "xw-spikingss",
+  "version": "2.1.2",
+  "description": "A lightweight web crawler.",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . Spiking --out=../pack --all --asar --electron-version=8.0.0 --appCopyright=\"Copyright © 2019 Ciyang. All rights reserved.\" --download.mirror=https://npm.taobao.org/mirrors/electron/ --ignore=\"(.gitignore|LICENSE|README.md|USAGE.md|USAGE_EN.md)\" --overwrite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XwCode02/xw-spikingss.git"
+  },
+  "keywords": [
+    "Electron",
+    "nodejs",
+    "spiking",
+    "crawler"
+  ],
+  "author": "Ciyang",
+  "license": "MPL-2.0",
+  "homepage": "https://github.com/XwCode02/xw-spikingss#readme",
+  "devDependencies": {
+    "electron": "^8.0.0",
+    "electron-packager": "^14.1.0"
+  },
+  "dependencies": {
+	"bicycle-moose": "^1.0.1",
+	"printer-moose": "^1.0.0",
+    "crypto-js": "^4.0.0",
+    "jsdom": "^16.0.0",
+    "puppeteer-core": "^3.0.0",
+    "minimist": "^1.2.3"
+  }
+}

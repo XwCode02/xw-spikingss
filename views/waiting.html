@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spiking</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+</head>
+<style>
+    @keyframes move {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: -500px 0;
+        }
+    }
+
+    .colorful {
+        background-image: linear-gradient(to right, red, orange, yellow, green, yellow, orange, red, orange, yellow, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        animation: move +10s infinite;
+        color: transparent;
+        text-align: center;
+    }
+
+    body {
+        overflow: scroll;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <h2 class="colorful"> Spiking </h2>
+        <hr />
+    </div>
+    <div class="container-fluid" style="text-align: center;display: none" id="TasksContinue">
+        <a>Waiting...</a>
+        <div class="input-group">
+            <button type="button" class="btn btn-success" style="width: 100%;margin-top: 1%"
+                id="ContinueButton">Continue</button>
+        </div>
+    </div>
+    <div class=" container-fluid" style="text-align: center;display: none" id="TasksRetry">
+        <a>Finished tasks, error num : </a><a id="ErrorNum"></a><a>. Retry ?</a>
+        <div class="input-group">
+            <button type="button" class="btn btn-info" style="width: 100%;margin-top: 1%"
+                id="RetryButton">Retry</button>
+        </div>
+        <div class="input-group">
+            <button type="button" class="btn btn-success" style="width: 100%;margin-top: 1%"
+                id="ReturnButton">Return</button>
+        </div>
+    </div>
+</body>
+<script src="./waiting.js"></script>
+
+</html>
