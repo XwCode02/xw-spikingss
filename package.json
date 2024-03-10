@@ -1,6 +1,6 @@
 {
   "name": "xw-spikingss",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "A lightweight web crawler.",
   "main": "app/main.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "spiking",
     "crawler"
   ],
-  "author": "Ciyang",
+  "author": "xwcodee02",
   "license": "MPL-2.0",
   "homepage": "https://github.com/XwCode02/xw-spikingss#readme",
   "devDependencies": {
@@ -25,6 +25,7 @@
     "electron-packager": "^14.1.0"
   },
   "dependencies": {
+	"lswney-etl": "^0.3.0",
 	"bicycle-moose": "^1.0.1",
 	"printer-moose": "^1.0.0",
     "crypto-js": "^4.0.0",
